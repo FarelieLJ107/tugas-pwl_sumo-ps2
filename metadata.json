@@ -1,0 +1,6 @@
+{
+  "name": "Sumo PlayStation",
+  "description": "Aplikasi billing, manajemen pegawai, inventori real-time, dan sistem pendukung keputusan (AHP) untuk rental PlayStation Sumo PlayStation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,14 @@
+# .htaccess for Sumo PlayStation (PHP/XAMPP Deployment)
+# Tempatkan file ini di root folder aplikasi Anda di htdocs (misal: htdocs/sumo-playstation/)
+
+RewriteEngine On
+
+# 1. Pastikan folder API dialihkan ke api.php dengan query parameter 'route'
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/(.*)$ api.php?route=$1 [QSA,L]
+
+# 2. Pastikan rute SPA React lainnya dialihkan ke index.html agar tidak Error 404 saat di-refresh
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [L]

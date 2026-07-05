@@ -1,0 +1,388 @@
+{
+  "users": [
+    {
+      "id": "user-pemilik",
+      "username": "pemilik",
+      "nama_lengkap": "Budi Santoso (Pemilik)",
+      "role": "pemilik",
+      "created_at": "2026-06-24T13:08:18.282Z"
+    },
+    {
+      "id": "user-pegawai",
+      "username": "pegawai",
+      "nama_lengkap": "Agus Pratama (Pegawai)",
+      "role": "pegawai",
+      "created_at": "2026-06-24T13:08:18.283Z"
+    }
+  ],
+  "user_passwords": {
+    "user-pemilik": "9dae2ad3091ca97ec73f4af93cfaf28abef34ddde2a38f0932889b6a5d7e192d",
+    "user-pegawai": "872cde9e54edd7a6efa61109f027f22603840baeb7b94ad7a4d9251c35cbc6ef"
+  },
+  "konsol_tv": [
+    {
+      "id_tv": 1,
+      "nama_tv": "TV-01",
+      "jenis_konsol": "TV Besar (PS3/PS4)",
+      "status": "kosong"
+    },
+    {
+      "id_tv": 2,
+      "nama_tv": "TV-02",
+      "jenis_konsol": "TV Besar (PS3/PS4)",
+      "status": "kosong"
+    },
+    {
+      "id_tv": 3,
+      "nama_tv": "TV-03",
+      "jenis_konsol": "TV Besar (PS3/PS4)",
+      "status": "kosong"
+    },
+    {
+      "id_tv": 4,
+      "nama_tv": "TV-04",
+      "jenis_konsol": "TV Besar (PS3/PS4)",
+      "status": "kosong"
+    },
+    {
+      "id_tv": 5,
+      "nama_tv": "TV-05",
+      "jenis_konsol": "TV Kecil (PS3/PS4)",
+      "status": "kosong"
+    },
+    {
+      "id_tv": 6,
+      "nama_tv": "TV-06",
+      "jenis_konsol": "TV Kecil (PS3/PS4)",
+      "status": "kosong"
+    },
+    {
+      "id_tv": 7,
+      "nama_tv": "TV-07",
+      "jenis_konsol": "TV Kecil (PS3/PS4)",
+      "status": "kosong"
+    },
+    {
+      "id_tv": 8,
+      "nama_tv": "TV-08",
+      "jenis_konsol": "TV Kecil (PS3/PS4)",
+      "status": "kosong"
+    }
+  ],
+  "billing": [
+    {
+      "id_billing": "bil-qrme04u9b",
+      "id_tv": 1,
+      "id_user": "user-pegawai",
+      "waktu_mulai": "2026-07-04T11:09:04.356Z",
+      "waktu_selesai": "2026-07-04T11:10:43.079Z",
+      "durasi_menit": 1,
+      "tarif_per_jam": 6000,
+      "total_sewa": 100,
+      "total_menu": 5000,
+      "total_bayar": 5100,
+      "status": "selesai"
+    }
+  ],
+  "inventori": [
+    {
+      "id_barang": "brg-001",
+      "nama_barang": "Teh Manis Hangat",
+      "stok_saat_ini": 50,
+      "safety_stock": 10,
+      "harga_grosir": 1500,
+      "harga_eceran": 3000,
+      "jumlah_terjual": 85,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-002",
+      "nama_barang": "Es Teh Manis",
+      "stok_saat_ini": 80,
+      "safety_stock": 15,
+      "harga_grosir": 2000,
+      "harga_eceran": 4000,
+      "jumlah_terjual": 120,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-003",
+      "nama_barang": "Kopi Panas",
+      "stok_saat_ini": 40,
+      "safety_stock": 10,
+      "harga_grosir": 2000,
+      "harga_eceran": 4000,
+      "jumlah_terjual": 45,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-004",
+      "nama_barang": "Es Kopi",
+      "stok_saat_ini": 45,
+      "safety_stock": 10,
+      "harga_grosir": 2500,
+      "harga_eceran": 5000,
+      "jumlah_terjual": 60,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-005",
+      "nama_barang": "Capucino Panas",
+      "stok_saat_ini": 30,
+      "safety_stock": 10,
+      "harga_grosir": 2500,
+      "harga_eceran": 5000,
+      "jumlah_terjual": 35,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-006",
+      "nama_barang": "Es Capucino",
+      "stok_saat_ini": 40,
+      "safety_stock": 10,
+      "harga_grosir": 3000,
+      "harga_eceran": 6000,
+      "jumlah_terjual": 50,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-007",
+      "nama_barang": "Susu Panas",
+      "stok_saat_ini": 25,
+      "safety_stock": 5,
+      "harga_grosir": 2000,
+      "harga_eceran": 4000,
+      "jumlah_terjual": 28,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-008",
+      "nama_barang": "Kuku Bima",
+      "stok_saat_ini": 30,
+      "safety_stock": 10,
+      "harga_grosir": 2000,
+      "harga_eceran": 4000,
+      "jumlah_terjual": 40,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-009",
+      "nama_barang": "Kuku Bima + Susu",
+      "stok_saat_ini": 25,
+      "safety_stock": 5,
+      "harga_grosir": 3000,
+      "harga_eceran": 6000,
+      "jumlah_terjual": 35,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-010",
+      "nama_barang": "Extra Joss",
+      "stok_saat_ini": 35,
+      "safety_stock": 10,
+      "harga_grosir": 2000,
+      "harga_eceran": 4000,
+      "jumlah_terjual": 55,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-011",
+      "nama_barang": "Extra Joss + Susu",
+      "stok_saat_ini": 25,
+      "safety_stock": 5,
+      "harga_grosir": 3000,
+      "harga_eceran": 6000,
+      "jumlah_terjual": 45,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-012",
+      "nama_barang": "Nutrisari",
+      "stok_saat_ini": 40,
+      "safety_stock": 10,
+      "harga_grosir": 2000,
+      "harga_eceran": 4000,
+      "jumlah_terjual": 70,
+      "kategori": "Minuman",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-013",
+      "nama_barang": "Indomie",
+      "stok_saat_ini": 50,
+      "safety_stock": 15,
+      "harga_grosir": 3000,
+      "harga_eceran": 6000,
+      "jumlah_terjual": 110,
+      "kategori": "Makanan",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-014",
+      "nama_barang": "Indomie + Telor",
+      "stok_saat_ini": 35,
+      "safety_stock": 10,
+      "harga_grosir": 5000,
+      "harga_eceran": 10000,
+      "jumlah_terjual": 95,
+      "kategori": "Makanan",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-015",
+      "nama_barang": "Indomie + Nasi",
+      "stok_saat_ini": 30,
+      "safety_stock": 10,
+      "harga_grosir": 5000,
+      "harga_eceran": 10000,
+      "jumlah_terjual": 65,
+      "kategori": "Makanan",
+      "status": "baik"
+    },
+    {
+      "id_barang": "brg-016",
+      "nama_barang": "Indomie + Nasi + Telor",
+      "stok_saat_ini": 25,
+      "safety_stock": 10,
+      "harga_grosir": 7000,
+      "harga_eceran": 14000,
+      "jumlah_terjual": 80,
+      "kategori": "Makanan",
+      "status": "baik"
+    }
+  ],
+  "detail_transaksi_menu": [
+    {
+      "id_detail": "det-jlsx8spsj",
+      "id_billing": "bil-qrme04u9b",
+      "id_barang": "brg-002",
+      "nama_barang": "Kopi Susu Es",
+      "jumlah": 1,
+      "subtotal": 5000
+    }
+  ],
+  "transaksi": [
+    {
+      "id_transaksi": "trx-hqpk1glw7",
+      "id_billing": "bil-qrme04u9b",
+      "id_tv": 1,
+      "total_sewa": 100,
+      "total_menu": 5000,
+      "total_bayar": 5100,
+      "metode_pembayaran": "cash",
+      "tanggal_transaksi": "2026-07-04T11:10:43.079Z",
+      "durasi_menit": 1
+    }
+  ],
+  "log_aktivitas": [
+    {
+      "id_log": "log-lp36cg7u5",
+      "id_user": "user-pegawai",
+      "nama_lengkap": "Agus Pratama (Pegawai)",
+      "aktivitas": "Selesai sewa TV-01. Total Bayar: Rp 5.100",
+      "waktu": "2026-07-04T11:10:43.079Z"
+    },
+    {
+      "id_log": "log-x9p2tlhvy",
+      "id_user": "user-pegawai",
+      "nama_lengkap": "Agus Pratama (Pegawai)",
+      "aktivitas": "Menambahkan pesanan menu ke TV-01. Total: Rp 5.000",
+      "waktu": "2026-07-04T11:10:35.973Z"
+    },
+    {
+      "id_log": "log-yff5biako",
+      "id_user": "user-pegawai",
+      "nama_lengkap": "Agus Pratama (Pegawai)",
+      "aktivitas": "Memulai sewa untuk TV-01 (TV Besar (PS3/PS4))",
+      "waktu": "2026-07-04T11:09:04.357Z"
+    },
+    {
+      "id_log": "log-c8wi81v40",
+      "id_user": "user-pegawai",
+      "nama_lengkap": "Agus Pratama (Pegawai)",
+      "aktivitas": "User Agus Pratama (Pegawai) berhasil login",
+      "waktu": "2026-07-04T11:08:22.258Z"
+    },
+    {
+      "id_log": "log-initial",
+      "id_user": "system",
+      "nama_lengkap": "Sistem Sumo PS",
+      "aktivitas": "Database diinisialisasi pertama kali",
+      "waktu": "2026-06-24T13:08:44.638Z"
+    }
+  ],
+  "rental_bawa_pulang": [
+    {
+      "id_rental": "PS3-HP-01",
+      "nama_konsol": "PS3 Bawa Pulang #01",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-02",
+      "nama_konsol": "PS3 Bawa Pulang #02",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-03",
+      "nama_konsol": "PS3 Bawa Pulang #03",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-04",
+      "nama_konsol": "PS3 Bawa Pulang #04",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-05",
+      "nama_konsol": "PS3 Bawa Pulang #05",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-06",
+      "nama_konsol": "PS3 Bawa Pulang #06",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-07",
+      "nama_konsol": "PS3 Bawa Pulang #07",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-08",
+      "nama_konsol": "PS3 Bawa Pulang #08",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-09",
+      "nama_konsol": "PS3 Bawa Pulang #09",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    },
+    {
+      "id_rental": "PS3-HP-10",
+      "nama_konsol": "PS3 Bawa Pulang #10",
+      "jenis_konsol": "PS3",
+      "status": "tersedia"
+    }
+  ],
+  "laporan_kerusakan": []
+}

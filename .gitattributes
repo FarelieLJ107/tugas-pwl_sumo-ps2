@@ -1,0 +1,15 @@
+# Menyembunyikan TypeScript dan konfigurasi frontend dari statistik bahasa GitHub
+*.ts linguist-vendored
+*.tsx linguist-vendored
+*.js linguist-vendored
+*.json linguist-vendored
+*.css linguist-vendored
+*.html linguist-vendored
+src/** linguist-vendored
+server.ts linguist-vendored
+server-db.ts linguist-vendored
+vite.config.ts linguist-vendored
+
+# Memaksa GitHub untuk menjadikan PHP sebagai bahasa utama (detectable)
+*.php linguist-detectable=true
+sumo-ps-app-php/** linguist-detectable=true

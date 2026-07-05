@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-color: var(--color-slate-950);
+  color: var(--color-slate-100);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+  --color-slate-950: #f4f6f9;
+  --color-slate-900: #ffffff;
+  --color-slate-850: #f8fafc;
+  --color-slate-800: #e2e8f0;
+  --color-slate-750: #cbd5e1;
+  --color-slate-700: #94a3b8;
+  --color-slate-600: #64748b;
+  --color-slate-500: #475569;
+  --color-slate-400: #334155;
+  --color-slate-300: #1e293b;
+  --color-slate-200: #0f172a;
+  --color-slate-100: #090d16;
+}
+
+/* Complete CSS-level Overrides for Light Mode to Ensure Maximum Reading Comfort */
+html.light body {
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+}
+
+/* High-Contrast Card and Background Conversions */
+html.light .bg-slate-950,
+html.light .bg-slate-950\/50,
+html.light .bg-slate-950\/80 {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-slate-900,
+html.light .bg-slate-900\/50,
+html.light .bg-slate-900\/80 {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-slate-850,
+html.light .bg-slate-850\/50,
+html.light .bg-slate-850\/80 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-slate-800,
+html.light .bg-slate-800\/40,
+html.light .bg-slate-800\/50,
+html.light .bg-slate-800\/80 {
+  background-color: #e2e8f0 !important;
+}
+
+/* Sidebar specifically */
+html.light aside {
+  background-color: #ffffff !important;
+  border-right: 1px solid #cbd5e1 !important;
+}
+
+/* Modal and Glass Panels layout */
+html.light .modal-box,
+html.light .glass-panel {
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 10px 10px -5px rgba(15, 23, 42, 0.04) !important;
+}
+
+/* Border Overrides to keep borders visible but soft */
+html.light .border-slate-800,
+html.light .border-slate-800\/50,
+html.light .border-slate-800\/60,
+html.light .border-slate-700,
+html.light .border-slate-700\/50,
+html.light .border-slate-900 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Text Overrides - Forces complete visibility in light mode (no blending/blurriness) */
+html.light .text-white,
+html.light .text-slate-50,
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #0f172a !important; /* Bold onyx color */
+}
+
+html.light .text-slate-300,
+html.light .text-slate-400,
+html.light .text-gray-300,
+html.light .text-gray-400 {
+  color: #1e293b !important; /* Deep dark slate */
+}
+
+html.light .text-slate-500,
+html.light .text-gray-500 {
+  color: #475569 !important; /* Perfect mid-dark grey for descriptions */
+}
+
+html.light .text-slate-600,
+html.light .text-gray-600 {
+  color: #64748b !important; /* Readable muted text */
+}
+
+/* Input, Selection, Dropdowns & Textareas */
+html.light input,
+html.light select,
+html.light textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+html.light input::placeholder,
+html.light select::placeholder,
+html.light textarea::placeholder {
+  color: #64748b !important;
+}
+
+html.light input:focus,
+html.light select:focus,
+html.light textarea:focus {
+  border-color: #4f46e5 !important;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1) !important;
+}
+
+/* Color Status Badges & Accents */
+html.light .text-indigo-400 {
+  color: #4f46e5 !important;
+}
+html.light .text-emerald-400 {
+  color: #16a34a !important;
+}
+html.light .text-amber-400 {
+  color: #d97706 !important;
+}
+html.light .text-rose-400 {
+  color: #dc2626 !important;
+}
+
+html.light .bg-indigo-950\/40,
+html.light .bg-indigo-900\/30,
+html.light .bg-indigo-900\/20,
+html.light .bg-indigo-600\/10,
+html.light .bg-indigo-600\/20 {
+  background-color: #e0e7ff !important;
+  color: #4f46e5 !important;
+}
+
+html.light .bg-emerald-950\/40,
+html.light .bg-emerald-950\/30 {
+  background-color: #dcfce7 !important;
+  color: #15803d !important;
+}
+
+html.light .bg-rose-950\/40,
+html.light .bg-rose-950\/30 {
+  background-color: #fee2e2 !important;
+  color: #b91c1c !important;
+}
+
+html.light .bg-amber-950\/40,
+html.light .bg-amber-950\/30 {
+  background-color: #fef3c7 !important;
+  color: #b45309 !important;
+}
+
+/* Re-allow beautiful white text specifically inside primary-colored backgrounds */
+html.light .bg-indigo-600,
+html.light .bg-indigo-500,
+html.light .bg-emerald-600,
+html.light .bg-rose-600,
+html.light .bg-amber-600,
+html.light button.bg-indigo-600,
+html.light button.bg-indigo-500,
+html.light button.bg-emerald-600,
+html.light button.bg-rose-600,
+html.light button.bg-amber-600,
+html.light .bg-indigo-600 *,
+html.light .bg-indigo-500 *,
+html.light .bg-emerald-600 *,
+html.light .bg-rose-600 *,
+html.light .bg-amber-600 * {
+  color: #ffffff !important;
+}
+
+/* Table elements */
+html.light table th {
+  background-color: #f8fafc !important;
+  color: #334155 !important;
+  border-bottom: 2px solid #cbd5e1 !important;
+  font-weight: 700 !important;
+}
+
+html.light table td {
+  border-bottom: 1px solid #e2e8f0 !important;
+  color: #1e293b !important;
+}
+
+/* Interactive hover classes */
+html.light .hover\:bg-slate-800:hover,
+html.light .hover\:bg-slate-800\/40:hover {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+html.light .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+/* active stopwatches and logs visual elements */
+html.light .active-glow {
+  animation: pulse-glow-light-indigo 3s infinite ease-in-out;
+  background: linear-gradient(135deg, #ffffff, #f5f7ff) !important;
+}
+
+/* SweetAlert adaptive styling rules */
+html.light .swal2-popup {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+html.light .swal2-title,
+html.light .swal2-html-container {
+  color: #1e293b !important;
+}
+html.light .swal2-confirm {
+  background-color: #4f46e5 !important;
+}
+html.light .swal2-cancel {
+  background-color: #f1f5f9 !important;
+  color: #334155 !important;
+}
+
+@keyframes pulse-glow-light-indigo {
+  0%, 100% {
+    box-shadow: 0 4px 20px -2px rgba(99, 102, 241, 0.08), 0 0 0 1px rgba(99, 102, 241, 0.1);
+  }
+  50% {
+    box-shadow: 0 10px 30px -2px rgba(99, 102, 241, 0.15), 0 0 0 2px rgba(99, 102, 241, 0.2);
+  }
+}
+
+/* Premium Visual Enhancements */
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Glassmorphism Classes for Modern Dashboard */
+.glass-panel {
+  background: color-mix(in srgb, var(--color-slate-900) 80%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in srgb, var(--color-slate-800) 40%, transparent);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--color-slate-700) 60%, transparent);
+  box-shadow: 0 12px 24px -10px color-mix(in srgb, var(--color-slate-950) 40%, transparent);
+}
+
+/* Active Session Glowing Pulsate */
+@keyframes pulse-glow-indigo {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.2), inset 0 0 5px rgba(99, 102, 241, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5), inset 0 0 10px rgba(99, 102, 241, 0.2);
+  }
+}
+
+.active-glow {
+  animation: pulse-glow-indigo 3s infinite ease-in-out;
+}
+
+/* Modern inputs and controls focus state */
+input, select, textarea {
+  transition: all 0.2s ease;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-indigo-500) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-indigo-500) 15%, transparent) !important;
+}
+
+/* Custom scrollbar with adaptive colors */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-slate-900);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-700);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-600);
+}
+
+/* SweetAlert Adaptive Styling */
+.swal2-popup {
+  border-radius: 20px !important;
+  border: 1px solid var(--color-slate-800) !important;
+  font-family: var(--font-sans) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+}
+html.dark .swal2-popup {
+  background: var(--color-slate-900) !important;
+  color: var(--color-slate-100) !important;
+}
+html.light .swal2-popup {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+html.light .swal2-title, 
+html.light .swal2-html-container {
+  color: #1e293b !important;
+}
+html.light .swal2-confirm {
+  background-color: var(--color-indigo-600) !important;
+}
+html.light .swal2-cancel {
+  background-color: var(--color-slate-200) !important;
+  color: var(--color-slate-800) !important;
+}
+
