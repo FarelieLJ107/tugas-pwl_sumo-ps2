@@ -42,10 +42,13 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
     }
   };
 
-  const handleQuickLogin = (user: 'pegawai' | 'pemilik') => {
+  const handleQuickLogin = (user: 'pegawai' | 'pemilik' | 'farelie') => {
     if (user === 'pegawai') {
       setUsername('pegawai');
       setPassword('pegawai123');
+    } else if (user === 'farelie') {
+      setUsername('farelie');
+      setPassword('farel0857');
     } else {
       setUsername('pemilik');
       setPassword('pemilik123');
@@ -167,20 +170,27 @@ export const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-3 gap-3">
           <button
             onClick={() => handleQuickLogin('pegawai')}
             className="border border-slate-800 hover:bg-slate-800/40 text-slate-300 rounded-lg py-2 px-3 text-xs flex flex-col items-center gap-1 transition-colors group"
           >
             <span className="text-slate-400 group-hover:text-white transition-colors">Role: Pegawai</span>
-            <span className="font-mono text-[10px] text-indigo-400">pegawai / pegawai123</span>
+            <span className="font-mono text-[10px] text-indigo-400">pegawai</span>
+          </button>
+          <button
+            onClick={() => handleQuickLogin('farelie')}
+            className="border border-slate-800 hover:bg-slate-800/40 text-slate-300 rounded-lg py-2 px-3 text-xs flex flex-col items-center gap-1 transition-colors group"
+          >
+            <span className="text-slate-400 group-hover:text-white transition-colors">Role: Pegawai</span>
+            <span className="font-mono text-[10px] text-indigo-400">farelie</span>
           </button>
           <button
             onClick={() => handleQuickLogin('pemilik')}
             className="border border-slate-800 hover:bg-slate-800/40 text-slate-300 rounded-lg py-2 px-3 text-xs flex flex-col items-center gap-1 transition-colors group"
           >
             <span className="text-slate-400 group-hover:text-white transition-colors">Role: Pemilik</span>
-            <span className="font-mono text-[10px] text-emerald-400">pemilik / pemilik123</span>
+            <span className="font-mono text-[10px] text-emerald-400">pemilik</span>
           </button>
         </div>
       </motion.div>

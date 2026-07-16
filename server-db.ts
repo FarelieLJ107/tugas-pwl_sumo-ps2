@@ -31,14 +31,21 @@ const DEFAULT_USERS: User[] = [
   {
     id: 'user-pemilik',
     username: 'pemilik',
-    nama_lengkap: 'Budi Santoso (Pemilik)',
+    nama_lengkap: 'Tambak Kusumo',
     role: 'pemilik',
     created_at: new Date().toISOString()
   },
   {
     id: 'user-pegawai',
     username: 'pegawai',
-    nama_lengkap: 'Agus Pratama (Pegawai)',
+    nama_lengkap: 'Alvi Dwi Rizky Syahputra',
+    role: 'pegawai',
+    created_at: new Date().toISOString()
+  },
+  {
+    id: 'user-pegawai2',
+    username: 'farelie',
+    nama_lengkap: 'Farelie Lanang Jati',
     role: 'pegawai',
     created_at: new Date().toISOString()
   }
@@ -46,7 +53,8 @@ const DEFAULT_USERS: User[] = [
 
 const DEFAULT_PASSWORDS: Record<string, string> = {
   'user-pemilik': hashPassword('pemilik123'),
-  'user-pegawai': hashPassword('pegawai123')
+  'user-pegawai': hashPassword('pegawai123'),
+  'user-pegawai2': hashPassword('farel0857')
 };
 
 const DEFAULT_KONSOL: KonsolTV[] = Array.from({ length: 8 }, (_, i) => ({

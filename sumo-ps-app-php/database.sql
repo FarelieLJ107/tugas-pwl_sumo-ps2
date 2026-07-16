@@ -120,8 +120,8 @@ CREATE TABLE IF NOT EXISTS laporan_kerusakan (
 -- Seed Default Data (Password default: 'pemilik123' dan 'pegawai123' terenkripsi password_hash)
 INSERT INTO users (username, password, nama_lengkap, role) VALUES
 ('pemilik', '$2y$10$U5RscIeJ/7mfeP/QvXU0tOP7iMv6.QG1X6w/Yn0n9Pq1Gk0uM7U.2', 'Tambak Kusumo', 'pemilik'),
-('pegawai', '$2y$10$7Rms9F5I6eXm8P.L/9vXUuL2iDv8.QG1X6w/Yn0n9Pq1Gk0uM7U.2', 'Alvi Dwi Rizky Syahputra', 'pegawai');
-('pegawai', 'farel0857', 'Farelie Lanang Jati', 'pegawai');
+('pegawai', '$2y$10$7Rms9F5I6eXm8P.L/9vXUuL2iDv8.QG1X6w/Yn0n9Pq1Gk0uM7U.2', 'Alvi Dwi Rizky Syahputra', 'pegawai'),
+('farelie', 'farel0857', 'Farelie Lanang Jati', 'pegawai');
 
 -- Seed 8 PlayStation TV Slots
 INSERT INTO konsol_tv (nama_tv, jenis_konsol, status) VALUES
